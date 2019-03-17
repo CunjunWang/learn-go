@@ -27,10 +27,10 @@ func main() {
 	}
 
 	fmt.Println("printArray(arr1)")
-	printArray(arr1)
+	printArray(arr1[:])
 
 	fmt.Println("printArray(arr3)")
-	printArray(arr3)
+	printArray(arr3[:])
 
 	// 在函数内部[0]被改变了, 但是在外面, 数组本身是不变的
 	fmt.Println("arr1 and arr3")
@@ -54,7 +54,7 @@ func main() {
 // [10]int 和 [20]int 是不同的
 // 调用函数 func f(arr [10]int)会copy数组
 // golang中一般不直接使用数组
-func printArray(arr [5]int) {
+func printArray(arr []int) {
 	arr[0] = 100
 	for i, v := range arr {
 		fmt.Println(i, v)
