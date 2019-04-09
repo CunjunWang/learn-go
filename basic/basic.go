@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"math/cmplx"
 	"math"
+	"math/cmplx"
 )
 
 // // 函数外也能定义变量
@@ -75,9 +75,7 @@ func triangle() {
 func consts() {
 	const filename = "abc.txt"
 	const a, b = 3, 4
-	const (
-
-	)
+	const ()
 	var c int
 	c = int(math.Sqrt(float64(a*a + b*b)))
 	fmt.Println(filename, c)

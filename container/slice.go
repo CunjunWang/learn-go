@@ -58,4 +58,14 @@ func main() {
 	fmt.Printf("s2=%v, len(s2)=%d, cap(s2)=%d\n", s2, len(s2), cap(s2))
 	fmt.Println(s1[3:6])
 	// fmt.Println(s1[3:7]) // 报错, slice bound看的是cap
+
+	// 向slice中添加元素
+	s3 := append(s2, 10)
+	s4 := append(s3, 11)
+	s5 := append(s4, 12)
+	fmt.Println("s3, s4, s5 = ", s3, s4, s5)
+	// s4, s5 view a different array
+	fmt.Println("arr = ", arr)
+	// 添加元素时如果超过cap, 系统会重新分配更大的底层数组
+	// 由于值传递, 必须接受append的返回值 s = append(s, val)
 }
