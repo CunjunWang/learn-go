@@ -1,16 +1,18 @@
 package queue
 
-type Queue []int
+// interface{} 任何类型
+
+type Queue []interface{}
 
 // 改变了Queue, 要用指针接收
-func (q *Queue) Push(v int) {
+func (q *Queue) Push(v interface{}) {
 	*q = append(*q, v)
 }
 
 func (q *Queue) Pop() int {
 	head := (*q)[0]
 	*q = (*q)[1:]
-	return head
+	return head.(int)
 }
 
 func (q *Queue) IsEmpty() bool {
