@@ -80,5 +80,10 @@ func main() {
 	myRoot.postOrderTraverse()
 	fmt.Println()
 
+	nodeCount := 0
+	root.TraverseFunc(func(node *tree.Node) {
+		nodeCount++
+	})
+	fmt.Print(nodeCount)
 	// golang没有构造函数, 可以自己写工厂函数
 }
