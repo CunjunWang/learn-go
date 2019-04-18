@@ -18,3 +18,7 @@ func (q *Queue) Pop() int {
 func (q *Queue) IsEmpty() bool {
 	return len(*q) == 0
 }
+
+// 写文档
+// go doc xxx
+// godoc -http :6060

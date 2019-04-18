@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0e7938e-0d00-4b16-adb1-4818e725d07e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhandling/defer/defer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/recover/recover.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functional/fib/fib.go" afterDir="false" />
+    <list default="true" id="f0e7938e-0d00-4b16-adb1-4818e725d07e" name="Default Changelist" comment="20190415 notes: comprehensive error handling, includes defer, recover, error type, and customize error">
+      <change afterPath="$PROJECT_DIR$/basic/basic/triangle_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errhandling/filelistingserver/errwrapper_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queue/queue_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic/basic.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic/basic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/longestSubstringWithoutRepetingCharactersWithMap.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhandling/filelistingserver/recover/recover.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhandling/recover/recover.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,34 +19,66 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functional/adder.go">
+        <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/web.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="117">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#21#62#0" expanded="true" />
+                <element signature="e#14#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/web.go">
+        <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/errwrapper_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="192">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queue/queue.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/queue/queue_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -52,8 +88,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -83,13 +119,11 @@
         <option value="$PROJECT_DIR$/container/strings.go" />
         <option value="$PROJECT_DIR$/tree/entry.go" />
         <option value="$PROJECT_DIR$/tree/node.go" />
-        <option value="$PROJECT_DIR$/basic/basic/basic.go" />
         <option value="$PROJECT_DIR$/basic/branch/branch.go" />
         <option value="$PROJECT_DIR$/basic/loop/loop.go" />
         <option value="$PROJECT_DIR$/basic/func/func.go" />
         <option value="$PROJECT_DIR$/retriever/real/retriever.go" />
         <option value="$PROJECT_DIR$/queue/entry/main.go" />
-        <option value="$PROJECT_DIR$/queue/queue.go" />
         <option value="$PROJECT_DIR$/retriever/main.go" />
         <option value="$PROJECT_DIR$/retriever/mock/mockRetriever.go" />
         <option value="$PROJECT_DIR$/tree/traversal.go" />
@@ -100,8 +134,18 @@
         <option value="$PROJECT_DIR$/errhandling/defer/defer.go" />
         <option value="$PROJECT_DIR$/errhandling/filelistingserver/recover/recover.go" />
         <option value="$PROJECT_DIR$/fib.txt" />
-        <option value="$PROJECT_DIR$/errhandling/filelistingserver/web.go" />
+        <option value="$PROJECT_DIR$/basic/basic/add_test.go" />
+        <option value="$PROJECT_DIR$/basic/basic/basic.go" />
+        <option value="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" />
+        <option value="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" />
+        <option value="$PROJECT_DIR$/basic/basic/triangle_test.go" />
+        <option value="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/web.go" />
+        <option value="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/errwrapper_test.go" />
         <option value="$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go" />
+        <option value="$PROJECT_DIR$/errhandling/filelistingserver/web.go" />
+        <option value="$PROJECT_DIR$/errhandling/filelistingserver/errwrapper_test.go" />
+        <option value="$PROJECT_DIR$/queue/queue.go" />
+        <option value="$PROJECT_DIR$/queue/queue_test.go" />
       </list>
     </option>
   </component>
@@ -111,7 +155,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -122,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,47 +177,16 @@
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-              <item name="defer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-              <item name="filelistingserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errhandling" type="462c0819:PsiDirectoryNode" />
-              <item name="filelistingserver" type="462c0819:PsiDirectoryNode" />
-              <item name="recover" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
-              <item name="fib" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -189,11 +203,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/errhandling/filelistingserver" />
+      <recent name="$PROJECT_DIR$/errhandling" />
+      <recent name="$PROJECT_DIR$/errhandling/filelistingserver/filelisting" />
+      <recent name="$PROJECT_DIR$/container/nonrepeating" />
       <recent name="$PROJECT_DIR$/basic/loop" />
-      <recent name="$PROJECT_DIR$/basic/func" />
-      <recent name="$PROJECT_DIR$/basic/branch" />
-      <recent name="$PROJECT_DIR$/basic/basic" />
-      <recent name="$PROJECT_DIR$/tree/entry" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -208,43 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build web.go">
-    <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/errhandling/defer/defer.go" />
-      <package value="learngo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build entry.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/tree/entry/entry.go" />
-      <package value="learngo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build fib.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/functional/fib.go" />
-      <package value="learngo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build recover.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/errhandling/filelistingserver/recover/recover.go" />
-      <package value="learngo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.ExampleQueue_Pop in learngo/queue">
     <configuration name="go build web.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -254,39 +232,124 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="ExampleQueue_Pop in learngo/queue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/queue" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="learngo/queue" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^ExampleQueue_Pop$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/errhandling/filelistingserver" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="learngo/errhandling/filelistingserver" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestErrWrapper$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver/filelisting" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/errhandling/filelistingserver/filelisting" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="learngo/errhandling/filelistingserver/filelisting" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestErrWrapper$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestErrWrapperInServer in learngo/errhandling/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/errhandling/filelistingserver" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="learngo/errhandling/filelistingserver" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestErrWrapperInServer$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.ExampleQueue_Pop in learngo/queue" />
+        <item itemvalue="Go Test.TestErrWrapperInServer in learngo/errhandling/filelistingserver" />
+        <item itemvalue="Go Test.TestErrWrapper in learngo/errhandling/filelistingserver" />
+        <item itemvalue="Go Test.TestErrWrapper in learngo/errhandling/filelistingserver/filelisting" />
         <item itemvalue="Go Build.go build web.go" />
-        <item itemvalue="Go Build.go build recover.go" />
-        <item itemvalue="Go Build.go build defer.go" />
-        <item itemvalue="Go Build.go build entry.go" />
-        <item itemvalue="Go Build.go build fib.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver_filelisting - 2019.04.18 at 23h 25m 56s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver/filelisting" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver_filelisting - 2019.04.18 at 23h 26m 44s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver/filelisting" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 36m 55s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 39m 15s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 39m 48s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 40m 00s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 41m 29s.xml">
+      <configuration name="TestErrWrapper in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapperInServer_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 45m 22s.xml">
+      <configuration name="TestErrWrapperInServer in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapperInServer_in_learngo_errhandling_filelistingserver - 2019.04.18 at 23h 48m 11s.xml">
+      <configuration name="TestErrWrapperInServer in learngo/errhandling/filelistingserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ExampleQueue_Pop_in_learngo_queue - 2019.04.18 at 23h 56m 50s.xml">
+      <configuration name="ExampleQueue_Pop in learngo/queue" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18253969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18437119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32513368" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39786097" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3244898" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39693877" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32946634" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37326202" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4989796" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32946634" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.50151056" side_tool="true" visible="true" weight="0.13247864" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49848944" weight="0.32967034" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +363,23 @@
     <MESSAGE value="20190413 notes: type, struct, package, encapsulate, GOPATH, go command tools" />
     <MESSAGE value="20190414 notes: interfaces in golang" />
     <MESSAGE value="20190415 notes: functional programming" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190415 notes: functional programming" />
+    <MESSAGE value="20190415 notes: comprehensive error handling, includes defer, recover, error type, and customize error" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190415 notes: comprehensive error handling, includes defer, recover, error type, and customize error" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learngo$TestSubstring_in_learngo_container_nonrepeating.out" NAME="TestSubstring in learngo/container/nonrepeating Coverage Results" MODIFIED="1555598486430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/local/go/src/math/sqrt.go">
@@ -363,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/container/longestSubstringWithoutRepetingCharactersWithMap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/container/map.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -391,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/basic/basic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/branch/branch.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -409,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queue/queue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -446,30 +504,6 @@
           <folding>
             <element signature="e#14#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree/entry/entry.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="906">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree/node.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree/traversal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -530,27 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/recover/recover.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/net/http/server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="2405" column="5" selection-start-line="2405" selection-start-column="5" selection-end-line="2405" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fib2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -568,27 +585,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fib2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errhandling/recover/recover.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/basic/triangle_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/container/nonrepeating/nonrepeating.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/basic/basic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/entry/entry.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+          <folding>
+            <element signature="e#14#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/traversal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/node.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functional/adder.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="-198">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/web.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="117">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#14#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/filelisting/handler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#62#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errhandling/filelistingserver/errwrapper_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/queue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue/queue_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>

@@ -71,4 +71,4 @@ func main() {
 // recover
 // 仅在defer中使用
 // 获取panic的值
-// 如果无法处理, 可以冲农信panic
+// 如果无法处理, 可以重新panic

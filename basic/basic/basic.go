@@ -57,15 +57,19 @@ func euler() {
 	// 发现不是正好为0, 因为实部虚部都是浮点数, 并不准
 	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi) + 1)
 
-	fmt.Println("%.3f", cmplx.Exp(1i*math.Pi)+1)
+	fmt.Println(cmplx.Exp(1i*math.Pi) + 1)
 }
 
 // 强制类型转换, 必须显示转换
 func triangle() {
 	var a, b int = 3, 4
+	fmt.Println(calculateTriangle(a, b))
+}
+
+func calculateTriangle(a, b int) int {
 	var c int
 	c = int(math.Sqrt(float64(a*a + b*b)))
-	fmt.Println(c)
+	return c
 }
 
 // 常量
