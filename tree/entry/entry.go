@@ -86,4 +86,13 @@ func main() {
 	})
 	fmt.Print(nodeCount)
 	// golang没有构造函数, 可以自己写工厂函数
+
+	channel := root.TraverseWithChannel()
+	maxNode := 0
+	for node := range channel {
+		if node.Value > maxNode {
+			maxNode = node.Value
+		}
+	}
+	fmt.Println("Max node value: ", maxNode)
 }
