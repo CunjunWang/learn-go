@@ -4,6 +4,7 @@ import (
 	"github.com/gpmgo/gopm/modules/log"
 	"learngo/errhandling/filelistingserver/filelisting"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 )
 
