@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0e7938e-0d00-4b16-adb1-4818e725d07e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/http/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maze/maze.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maze/maze.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhandling/filelistingserver/web.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,29 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maze/maze.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/maze/maze.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+              <folding>
+                <element signature="e#14#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,8 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/abc.txt" />
-        <option value="$PROJECT_DIR$/branch.go" />
         <option value="$PROJECT_DIR$/loop.go" />
         <option value="$PROJECT_DIR$/func.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -95,6 +115,8 @@
         <option value="$PROJECT_DIR$/channel/select/select.go" />
         <option value="$PROJECT_DIR$/http/client.go" />
         <option value="$PROJECT_DIR$/errhandling/filelistingserver/web.go" />
+        <option value="$PROJECT_DIR$/maze/maze.go" />
+        <option value="$PROJECT_DIR$/maze/maze.in" />
       </list>
     </option>
   </component>
@@ -105,10 +127,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="645" />
-    <option name="y" value="328" />
-    <option name="width" value="1035" />
-    <option name="height" value="722" />
+    <option name="x" value="769" />
+    <option name="y" value="23" />
+    <option name="width" value="911" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -126,7 +148,7 @@
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="maze" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build web.go">
+  <component name="RunManager" selected="Go Build.go build maze.go">
     <configuration name="go build atomic.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -194,11 +216,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build done.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build maze.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/channel/done/done.go" />
+      <filePath value="$PROJECT_DIR$/maze/maze.go" />
       <package value="learngo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -223,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build maze.go" />
         <item itemvalue="Go Build.go build web.go" />
         <item itemvalue="Go Build.go build client.go" />
         <item itemvalue="Go Build.go build atomic.go" />
         <item itemvalue="Go Build.go build select.go" />
-        <item itemvalue="Go Build.go build done.go" />
       </list>
     </recent_temporary>
   </component>
@@ -273,14 +295,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="776" y="328" width="1035" height="722" extended-state="0" />
+    <frame x="769" y="23" width="911" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24068479" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2013809" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32539684" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26631016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3968254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,7 +376,8 @@
     <MESSAGE value="20190420 notes: goroutine and scheduling" />
     <MESSAGE value="20190420 notes: channels" />
     <MESSAGE value="20190420 notes: scheduling with select keyword, go concurrency, mutex in go lang" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190420 notes: scheduling with select keyword, go concurrency, mutex in go lang" />
+    <MESSAGE value="20190420 notes: builtin libraries, http, logs, encoding, math, regexp, time, bufio ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="20190420 notes: builtin libraries, http, logs, encoding, math, regexp, time, bufio ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -735,6 +759,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maze/maze.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maze/maze.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+          <folding>
+            <element signature="e#14#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
