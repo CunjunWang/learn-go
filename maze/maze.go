@@ -5,6 +5,11 @@ import (
 	"os"
 )
 
+// 广度优先搜索走迷宫
+// 用循环创建二维slice
+// 用Fscanf读取文件
+// 对Point的抽象
+
 func readMaze(fileName string) [][]int {
 	file, err := os.Open(fileName)
 	if err != nil {
